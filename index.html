@@ -1,0 +1,116 @@
+<html>
+  <head> 
+      <style>
+          .class-a {
+            display: inline-block;
+            padding: 15px 25px;
+            font-size: 12px;
+            cursor: pointer;
+            text-align: center;
+            text-decoration: none;
+            outline: none;
+            color: #fff;
+            background-color: #694d70;
+            border: none;
+            border-radius: 15px;
+            box-shadow: 0 9px #999;
+          }
+          
+          .class-a:hover {background-color: #527ef6}
+          
+          .class-a:active {
+            background-color: #ae6ff7;
+            box-shadow: 0 5px #666;
+            transform: translateY(4px);
+          }
+
+          .class-b {
+            display: inline-block;
+            padding: 15px 25px;
+            font-size: 12px;
+            cursor: pointer;
+            text-align: center;
+            text-decoration: none;
+            outline: none;
+            color: #fff;
+            background-color: #694d70;
+            border: none;
+            border-radius: 15px;
+            box-shadow: 0 9px #999;
+          }
+          
+          .class-b:hover {background-color: #6cf5b5}
+          
+          .class-b:active {
+            background-color: #388629;
+            box-shadow: 0 5px rgb(10, 81, 83);
+            transform: translateY(4px);
+          }
+          .class-c {
+            display: inline-block;
+            padding: 15px 25px;
+            font-size: 12px;
+            cursor: pointer;
+            text-align: center;
+            text-decoration: none;
+            outline: none;
+            color: #fff;
+            background-color: #694d70;
+            border: none;
+            border-radius: 15px;
+            box-shadow: 0 9px #999;
+          }
+          
+          .class-c:hover {background-color: #ee9f5f}
+          
+          .class-c:active {
+            background-color: #2e73af;
+            box-shadow: 0 5px rgb(87, 73, 73);
+            transform: translateY(4px);
+          }
+
+
+          .class-d {
+            display: inline-block;
+            padding: 15px 25px;
+            font-size: 12px;
+            cursor: pointer;
+            text-align: center;
+            text-decoration: none;
+            outline: none;
+            color: #fff;
+            background-color: #694d70;
+            border: none;
+            border-radius: 15px;
+            box-shadow: 0 9px #999;
+          }
+          
+          .class-d:hover {background-color: #3b3b4d}
+          
+          .class-d:active {
+            background-color: #6671a38c;
+            box-shadow: 0 5px #666;
+            transform: translateY(4px);
+          }
+          </style>  
+    <!-- Load the latest version of TensorFlow.js -->
+    <script src="https://unpkg.com/@tensorflow/tfjs"></script>
+    <script src="https://unpkg.com/@tensorflow-models/mobilenet"></script>
+    <!-- Load KNN Classifier-->
+    <script src="https://unpkg.com/@tensorflow-models/knn-classifier"></script>
+  </head>
+  <body>
+
+    <div id="console"></div>
+
+    <!-- Add an image that we will use to test -->
+    <video autoplay playsinline muted id="webcam" width="400" height="312"></video>
+    <br/>
+    <button id="class-a" class="class-a">Add A</button>
+    <button id="class-b" class="class-b">Add B</button>
+    <button id="class-c" class="class-c">Add C</button>
+    <button id="class-d" class="class-d">Calibrate None</button>
+    <!-- Load index.js after the content of the page -->
+    <script src="index.js"></script>
+  </body>
+</html>
